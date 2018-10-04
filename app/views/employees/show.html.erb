@@ -1,0 +1,12 @@
+<h1>Employee Profile</h1>
+
+<b>ID#:</b> <%= @employee.employee_id %>
+
+<nav>
+  <%= link_to "All Employees", employees_path %> |
+  <%= link_to "Edit Employee", edit_employee_path(@employee) %> | 
+  <%= link_to "Delete Employee", employee_path(@employee), method: :delete, data: { confirm: 'Are you sure?' } %>
+
+</nav>
+
+	

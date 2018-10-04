@@ -1,0 +1,10 @@
+<%= form_for(@employee) do |f| %>
+  <p>
+    <%= f.label :employee_id %><br/>
+    <%= f.text_field :employee_id %>
+  </p>
+  <p>
+    <%= f.submit %>
+        <%= link_to "Cancel", employees_path %>
+  </p>
+<% end %>
