@@ -1,6 +1,9 @@
 <h1>Employee Profile</h1>
 
-<b>ID#:</b> <%= @employee.employee_id %>
+<b>ID#:</b> <%= @employee.employee_id %> <br />
+<b>Department Name:</b> <%= @employee.department_name %> | <b>Department Number:</b> <%= @employee.department_id %>
+<br />
+<b>Employee Name:</b> <%= @employee.last_name %>, <%= @employee.first_name %> <br />
 
 <nav>
   <%= link_to "All Employees", employees_path %> |
