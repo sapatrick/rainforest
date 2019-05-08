@@ -1,8 +1,8 @@
-<%= form_for(@employee) do |f| %>
-<%= form_for(@employee) do |f| %>
+<%= form_for(job) do |f| %>
+<%= form_for(job) do |f| %>
   <p>
-    <%= f.label :employee_id %><br/>
-    <%= f.text_field :employee_id %>
+    <%= f.label job_id %><br/>
+    <%= f.text_field job_id %>
   </p>
   <p>
     <%= f.label :first_name %><br/>
@@ -22,6 +22,6 @@
   </p>
   <p>
     <%= f.submit %>
-        <%= link_to "Cancel", employees_path %>
+        <%= link_to "Cancel", jobs_path %>
   </p>
 <% end %>

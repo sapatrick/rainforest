@@ -1,0 +1,13 @@
+<h1>
+	Jobs
+</h1>
+
+<%= link_to("Add new Job", new_job_path) %>
+
+<ul>
+  <% @jobs.each do |job| %>
+    <li><b><%= link_to job %> </b>  </li>
+  <% end %>
+</ul>
+
+	
