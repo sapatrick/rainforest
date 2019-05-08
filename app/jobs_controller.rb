@@ -41,4 +41,10 @@ class JobsController < ApplicationController
     redirect_to jobs_url
   end
 
+private
+
+  def job_params
+	job_params = params.require(:job).permit(:job_id, :job_name, :date_added)
+  end
+
 end

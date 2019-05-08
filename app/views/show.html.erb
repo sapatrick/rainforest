@@ -1,0 +1,15 @@
+<h1>Job</h1>
+<h2><%= @job.job_name %></h2>
+
+<b>Department Name:</b> <%= @job.job_id %>
+<br />
+
+
+<nav>
+  <%= link_to "All Jobs", jobs_path %> |
+  <%= link_to "Edit Job", edit_job_path(@job) %> | 
+  <%= link_to "Delete Job", job_path(@job), method: :delete, data: { confirm: 'Are you sure?' } %>
+
+</nav>
+
+	

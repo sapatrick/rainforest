@@ -1,0 +1,21 @@
+<%= form_for(@job) do |f| %>
+
+<p>
+    <%= f.label :job_id %><br/>
+    <%= f.text_field :job_id %>
+  </p>
+
+  <p>
+    <%= f.label :date_added %><br/>
+    <%= f.text_field :date_added %>
+  </p>
+  <p>
+    <%= f.label :job_name %><br/>
+    <%= f.text_field :job_name %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+        <%= link_to "Cancel", jobs_path %>
+  </p>
+<% end %>
