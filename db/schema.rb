@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190509002332) do
+ActiveRecord::Schema.define(version: 20190509004534) do
 
   create_table "employees", force: :cascade do |t|
     t.integer "employee_id"
@@ -33,6 +33,16 @@ ActiveRecord::Schema.define(version: 20190509002332) do
     t.boolean "job_complete"
     t.date "job_due_date"
     t.string "job_salesperson"
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.integer "task_id"
+    t.integer "task_deptnum"
+    t.string "task_dept"
+    t.integer "job_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["job_id"], name: "index_tasks_on_job_id"
   end
 
 end
